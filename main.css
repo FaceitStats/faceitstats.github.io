@@ -59,9 +59,34 @@ body {
 #button2{
     background-color: #121212 !important;
 }
+
+#bigcont {
+  display: flex;
+  margin: auto;
+  width: 440px;
+}
+
+#button2 {
+  margin-left: 10px;
+}
+
+#button2 {
+  margin-right: 10px;
+  width: 220px;
+}
+
+.button-div {
+  display: flex;
+  margin: auto;
+  width: 220px;
+}
 .button:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19) !important;
     color: #efefef !important;
     margin-top: 12% !important;
     margin-bottom: 15% !important;
+}
+#discord-logo {
+  width:20px ;
+  height:20px ;
 }
