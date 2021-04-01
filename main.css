@@ -1,0 +1,40 @@
+body {
+  font-family: 'Noto Sans';
+  background-color: #17191a;
+}
+
+.main-container {
+  width: 100%;
+}
+
+.flex-container {
+  width: 100%;
+  display: flex;
+  background-color: black;
+  height: 100px;
+}
+
+#header-image {
+  margin: auto;
+}
+
+.image-container {
+  width: 180px;
+  height: 180px;
+  margin: auto;
+}
+
+.banner-title {
+  color: #e8e6e3;
+  font-size: 3em;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.banner-subtitle {
+  color: #e8e6e3;
+  font-size: 2em;
+  text-align: center;
+  width: 600px;
+  margin: auto;
+}
