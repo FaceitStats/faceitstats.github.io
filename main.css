@@ -9,6 +9,7 @@
 
 html, body{
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
   width: 100%;
   margin: 0px;
   padding: 0px;
@@ -19,7 +20,7 @@ html, body{
 
 .top-half {
   background-color: var(--main-bg-color);
-  height: 700px;
+  height: 800px;
   width: 100%;
 }
 
@@ -63,11 +64,14 @@ html, body{
   padding-right: 160px;
   font-weight: normal;
   font-style: normal;
+  text-decoration: none;
 }
 
 .hero {
   color: var(--text-bg-color);
   font-weight: bold;
+  position: relative;
+  top: 40px;
 }
 
 .hero .hero-title {
@@ -101,9 +105,11 @@ html, body{
 }
 
 .hero .button {
-  padding: 5px 1.5em;
-  left: 863px;
-  top: 551px;
+  position: relative;
+  width: 150px;
+  height: 25px;
+  left: 860px;
+  top: 270px;
   color: var(--text-bg-color);
   background: var(--faceit-bg-color);
   border-radius: 23px;
@@ -113,7 +119,7 @@ html, body{
 /* Bottom halve of the website AKA the content*/
 
 .content {
-  height: 700px;
+  height: 980px;
   width: 100%;
   background-color: var(--bottom-bg-color);
   position: relative;
@@ -128,7 +134,7 @@ html, body{
   line-height: 60px;
   text-align: center;
   left: 580px;
-  top: 90px;
+  top: 260px;
 }
 
 .content .instructions .description {
@@ -142,7 +148,12 @@ html, body{
   display: block;
   width: 400px;
   left: 750px;
-  top: 165px;
+  top: 340px;
+}
+
+.content .cards-container {
+  position: relative;
+  top: 190px;
 }
 
 .content .cards-container .card-1 {
@@ -241,6 +252,68 @@ html, body{
   left: 70px;
 }
 
+/* guide section of the website AKA the content*/
 
+.guide {
+  height: 980px;
+  width: 100%;
+  background-color: var(--bottom-bg-color);
+  position: relative;
+}
 
+.guide .instructions .title {
+  position: absolute;
+  color: var(--text-bg-color);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  left: 700px;
+  top: 210px;
+}
+
+.guide .instructions .description {
+  position: absolute;
+  color: var(--text-bg-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  display: block;
+  width: 400px;
+  left: 750px;
+  top: 300px;
+}
+
+.guide .img-1 {
+  width: 300px;
+  /* image 7 */
+
+  position: absolute;
+  width: 598px;
+  height: 379.5px;
+  left: 300px;
+  top: 450px;
+
+  background: url(/img/command-prefix-1.png);
+  border-radius: 29px;
+
+}
+
+.guide .img-2 {
+  width: 300px;
+  /* image 7 */
+
+  position: absolute;
+  width: 598px;
+  height: 379.5px;
+  left: 1000px;
+  top: 450px;
+
+  background: url(/img/command-prefix-2.png);
+  border-radius: 29px;
+
+}
 
