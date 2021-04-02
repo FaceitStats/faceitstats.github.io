@@ -48,6 +48,11 @@ html, body{
   -o-transition: margin 0.2s ease-out;
 }
 
+.top-half .button .text {
+  text-decoration: none;
+  color: var(--faceit-bg-color);
+}
+
 .top-half .button:hover {
   cursor:pointer;
   margin-top: -6px;
@@ -114,6 +119,11 @@ html, body{
   background: var(--faceit-bg-color);
   border-radius: 23px;
   font-weight: normal;
+}
+
+.hero .button .text {
+  text-decoration: none;
+  color: var(--text-bg-color);
 }
 
 /* Bottom halve of the website AKA the content*/
