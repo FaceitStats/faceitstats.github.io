@@ -1,92 +1,246 @@
-body {
-  font-family: 'Noto Sans';
-  background-color: #17191a;
-  margin:0px;
-  height: 10000px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+
+:root {
+  --main-bg-color: #141617;
+  --bottom-bg-color: #17191A;
+  --faceit-bg-color: #FF5500;
+  --text-bg-color: #ffffff;
 }
 
-.main-container {
+html, body{
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+}
+
+/* Top halve of the website AKA the hero */
+
+.top-half {
+  background-color: var(--main-bg-color);
+  height: 700px;
   width: 100%;
 }
 
-.flex-container {
+.top-half .item-3 {
+  position: relative;
+  top: 70px;
+  width: 150px;
+  height: 150px;
+}
+
+.top-half .button {
+  position: absolute;
+  padding: 5px 1.5em;
+  top: 125px;
+  left: 995px;
+  text-align: center;
+
+  color: var(--faceit-bg-color);
+  background: var(--bottom-bg-color);
+  border: 1.2px solid var(--faceit-bg-color);
+  border-radius: 23px;
+
+  -webkit-transition: margin 0.2s ease-out;
+  -moz-transition: margin 0.2s ease-out;
+  -o-transition: margin 0.2s ease-out;
+}
+
+.top-half .button:hover {
+  cursor:pointer;
+  margin-top: -6px;
+}
+
+.navigation {
+  position: relative;
+  transform: translate(21%, -8%);
+  bottom: 50px;
+}
+
+.navitem {
+  color: var(--text-bg-color);
+  padding-right: 160px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.hero {
+  color: var(--text-bg-color);
+  font-weight: bold;
+}
+
+.hero .hero-title {
+  position: relative;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 90px;
+  top: 100px;
+  left: 590px;
+}
+
+.hero .faceit {
+  color: var(--faceit-bg-color);
+}
+
+.hero .text-under {
+  position: relative;
+  top: 190px;
+  left: 20px;
+}
+
+.hero .hero-description {
+  position: relative;
+  display: block;
+  width: 530px;
+  left: 690px;
+  top: 210px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.hero .button {
+  padding: 5px 1.5em;
+  left: 863px;
+  top: 551px;
+  color: var(--text-bg-color);
+  background: var(--faceit-bg-color);
+  border-radius: 23px;
+  font-weight: normal;
+}
+
+/* Bottom halve of the website AKA the content*/
+
+.content {
+  height: 700px;
   width: 100%;
-  display: flex;
-  background-color: black;
-  height: 100px;
+  background-color: var(--bottom-bg-color);
+  position: relative;
 }
 
-#header-image {
-  margin: auto;
-}
-
-.image-container {
-  width: 180px;
-  height: 180px;
-  margin: auto;
-}
-
-.banner-title {
-  color: #e8e6e3;
-  font-size: 3em;
+.content .instructions .title {
+  position: absolute;
+  color: var(--text-bg-color);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
   text-align: center;
-  padding-bottom: 2%;
+  left: 580px;
+  top: 90px;
 }
 
-.banner-subtitle {
-  color: #e8e6e3;
-  font-size: 2em;
+.content .instructions .description {
+  position: absolute;
+  color: var(--text-bg-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
   text-align: center;
-  width: 600px;
-  margin: auto;
-}
-.button{
-    border: none ;
-    border-radius: 30px ;
-    color: white ;
-    padding: 15px 32px ;
-    text-decoration: none ;
-    display: inline-block ;
-    font-size: 16px ;
-    font-family: 'Noto Sans' ;
-    margin-top: 15% ;
-    transition: 0.3s ;
-    width: 210px ;
-}
-#button1{
-    background-color: #fd3114 ;
-}
-#button2{
-    background-color: #121212 ;
+  display: block;
+  width: 400px;
+  left: 750px;
+  top: 165px;
 }
 
-#bigcont {
-  display: flex;
-  margin: auto;
-  width: 440px;
+.content .cards-container .card-1 {
+  position: absolute;
+  width: 269px;
+  height: 342px;
+  left: 400px;
+  top: 314px;
+
+  background: var(--main-bg-color);
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
 }
 
-#button2 {
-  margin-left: 12px;
+.content .cards-container .card-2 {
+  position: absolute;
+  width: 269px;
+  height: 342px;
+  left: 820px;
+  top: 314px;
+
+  background: var(--main-bg-color);
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
 }
 
-#button2 {
-  margin-right: 10px;
+.content .cards-container .card-3 {
+  position: absolute;
+  width: 269px;
+  height: 342px;
+  left: 1240px;
+  top: 314px;
+
+  background: var(--main-bg-color);
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
+}
+
+.content .cards-container .card-3 .title {
+  color: var(--faceit-bg-color);
+  position: relative;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  top: 200px;
+  left: 70px;
+}
+
+.content .cards-container .card-3 .description {
+  position: relative;
+  display: block;
+  text-align: center;
+  top: 210px;
+  color: var(--text-bg-color);
+  font-size: 14px;
   width: 220px;
+  left: 25px;
 }
 
-.button-div {
-  display: flex;
-  margin: auto;
+.content .cards-container .card-3 .img {
+  width: 125px;
+  height: 125px;
+  position: relative;
+  bottom: 70px;
+  left: 70px;
+}
+
+.content .cards-container .cards .title {
+  color: var(--faceit-bg-color);
+  position: relative;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  top: 200px;
+  left: 30px;
+}
+
+.content .cards-container .cards .description {
+  position: relative;
+  display: block;
+  text-align: center;
+  top: 210px;
+  color: var(--text-bg-color);
+  font-size: 14px;
   width: 220px;
+  left: 25px;
 }
-.button:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19) ;
-    color: #efefef ;
-    margin-top: 12% ;
-    margin-bottom: 15% ;
+
+.content .cards-container .cards .img {
+  width: 125px;
+  height: 125px;
+  position: relative;
+  bottom: 70px;
+  left: 70px;
 }
-#discord-logo {
-  width:20px ;
-  height:20px ;
-}
+
+
+
+
